@@ -4,6 +4,7 @@ import com.singhfyu.designpatterns.creational.singleton.basiclazy.LazySingleton;
 import com.singhfyu.designpatterns.creational.singleton.bestpractice.BillPughSingleton;
 import com.singhfyu.designpatterns.creational.singleton.bestpractice.EnumSingleton;
 import com.singhfyu.designpatterns.creational.singleton.eager.EagerSingleton;
+import com.singhfyu.designpatterns.creational.singleton.realworld.Logger;
 import com.singhfyu.designpatterns.creational.singleton.threadsafe.DoubleCheckedLockingSingleton;
 import com.singhfyu.designpatterns.creational.singleton.threadsafe.SynchronisedSingleton;
 
@@ -43,5 +44,12 @@ public class Main {
         BillPughSingleton bps1 = BillPughSingleton.getInstance();
         BillPughSingleton bps2 = BillPughSingleton.getInstance();
         System.out.println(bps1==bps2);
+
+        //Logger
+        Logger logger =  Logger.INSTANCE;
+        logger.info("Application started");
+        logger.debug("Debugging enabled");
+        logger.warn("This is a warning");
+        logger.error("Something went wrong");
     }
 }
