@@ -1,4 +1,4 @@
-package com.singhfyu.designpatterns.creational.singleton.realworld;
+package com.singhfyu.designpatterns.creational.singleton.realworld.Logger.EnumLogger;
 
 import java.time.LocalDateTime;
 
