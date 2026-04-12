@@ -16,6 +16,7 @@ public class Client {
         registry.put("INTELLIGENT", originalIntelligentStudent);
 
         //copy
+
         Student intelligentStudentPrototype = registry.get("INTELLIGENT");
         Student s1= intelligentStudentPrototype.clone();
         s1.name="Shubham";
